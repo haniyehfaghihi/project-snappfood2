@@ -1,0 +1,332 @@
+@media (max-width:2652px) {
+    .header {
+        width: 70%;
+        height: 35vw;
+    }
+    .img-pizza {
+        right: 35rem;
+        bottom: 16rem;
+    }
+    .menu-header {
+        width: 90vw;
+        height: 6vw;
+        top: 40rem;
+    }
+    .img-h1 {
+        width: 7rem;
+        height: 5.5rem;
+    }
+    .ghazaha {
+        width: 70%;
+    }
+    .application {
+        width: 70%;
+        margin-right: 25rem;
+    }
+    .kasbokar {
+        margin-right: 25rem;
+        width: 70%;
+        height: 15vw;
+    }
+    .img-kasbokar {
+        margin-right: 15rem;
+        bottom: 5rem;
+    }
+    .shahr {
+        height: 20vw;
+    }
+}
+
+@media (max-width:2200px) {
+    .header {
+        width: 70%;
+        height: 45vw;
+    }
+    .img-pizza {
+        right: 45rem;
+        bottom: 18rem;
+    }
+    .menu-header {
+        width: 90vw;
+        height: 8vw;
+    }
+    .img-h1 {
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    .ghazaha {
+        width: 70%;
+        margin-right: 20rem;
+    }
+    .application {
+        width: 70%;
+        margin-right: 20rem;
+    }
+    .kasbokar {
+        margin-right: 20rem;
+        width: 70%;
+    }
+    .img-kasbokar {
+        margin-right: 15rem;
+        bottom: 0rem;
+    }
+}
+
+@media (max-width:1900px) {
+    .header {
+        width: 80%;
+        height: 50vw;
+    }
+    .img-h1 {
+        width: 4rem;
+        height: 4rem;
+    }
+    .ghazaha {
+        width: 80%;
+        margin-right: 12rem;
+    }
+    .application {
+        width: 80%;
+        margin-right: 12rem;
+    }
+    .kasbokar {
+        margin-right: 12rem;
+        width: 80%;
+        height: 25vw;
+    }
+}
+
+@media (max-width:1600px) {
+    .header {
+        width: 90%;
+        height: 55vw;
+    }
+    .ghazaha {
+        width: 90%;
+        margin-right: 5rem;
+    }
+    .application {
+        width: 85%;
+        margin-right: 5rem;
+    }
+    .kasbokar {
+        margin-right: 8rem;
+        width: 80%;
+        height: 35vw;
+    }
+    .shahr {
+        height: 30vw;
+    }
+}
+
+@media (max-width:1400px) {
+    .header {
+        width: 90%;
+        height: 60vw;
+    }
+    .menu-header {
+        width: 90vw;
+        height: 8vw;
+    }
+    .img-h1 {
+        width: 2.8rem;
+        height: 2.8rem;
+    }
+    .application {
+        height: 50vw;
+    }
+}
+
+@media (max-width:1300px) {
+    .header {
+        width: 90%;
+        height: 70vw;
+    }
+    .menu-header {
+        width: 90vw;
+        height: 8vw;
+    }
+    .img-h1 {
+        width: 2rem;
+        height: 2rem;
+    }
+    .application {
+        height: 50vw;
+    }
+    .footer {
+        height: 30vw;
+    }
+}
+
+@media (max-width:1200px) {
+    .header {
+        width: 90%;
+        height: 75vw;
+    }
+    .size-logo {
+        margin-left: 18rem;
+    }
+    .menu-header {
+        width: 90vw;
+        height: 8vw;
+    }
+    .img-h1 {
+        width: 3rem;
+        height: 3rem;
+    }
+    .icon-profile {
+        display: flex;
+    }
+    .prof {
+        display: none;
+    }
+    .application {
+        height: 65vw;
+    }
+    .kasbokar {
+        margin-right: 4rem;
+        width: 90%;
+        height: 45vw;
+    }
+    .img-kasbokar {
+        display: none;
+    }   
+}
+
+
+@media (max-width:992px) {
+    .header {
+        width: 95%;
+        height: 85vw;
+    }
+    .img-pizza {
+        right: 28rem;
+    }
+    .menu-header {
+        width: 90vw;
+        height: 14vw;
+    }
+    .ghazaha {
+        margin-right: 3rem;
+    }
+    .application {
+        height: 85vw;
+    }
+    .app-im {
+        width: 40vw;
+        height: 60vw;
+        bottom: 8rem;
+    }
+    .shahr {
+        height: 100vw;
+        margin-right: 3rem;
+    }
+    .margin-foot {
+        margin-right: 8rem;
+    }
+}
+
+@media (max-width:900px) {
+    .header {
+        width: 100%;
+        height: 93vw;
+    }
+    .img-pizza {
+        right: 28rem;
+    }
+    .menu-header {
+        width: 90vw;
+        height: 14vw;
+    }
+    .application {
+        height: 95vw;
+    }
+}
+
+@media (max-width:800px) {
+    .header {
+        width: 100%;
+        height: 110vw;
+    }
+    .size-logo {
+        margin-left: 10rem;
+    }
+    .img-pizza {
+        right: 28rem;
+    }
+    .application {
+        height: 120vw;
+    }
+    .app-im {
+        display: none;
+    }
+    .div-app {
+        padding: 4rem 8rem 4rem 0;
+    }
+    .kasbokar {
+        margin-right: 5rem;
+        width: 90%;
+        height: 65vw;
+    }
+    .shahr {
+        height: 130vw;
+    }
+    .footer {
+        height: 90vw;
+    }
+    
+}
+
+@media (max-width:700px) {
+    .header {
+        width: 98%;
+        height: 130vw;
+    }
+    .ghazaha {
+        margin-right: 1rem;
+    }
+    .application {
+        height: 90vw;
+        margin-right: 0.5rem;
+    }
+    .div-app {
+        padding: 0rem 0.5rem 0rem 1rem;
+    }
+    .kasbokar {
+        margin-right: 1rem;
+    }
+}
+
+@media (max-width:600px) {
+    .header {
+        width: 98%;
+        height: 145vw;
+    }
+    .size-logo {
+        margin-left: 1rem;
+    }
+    .menu-header {
+        height: 18vw;
+    }
+    .ghazaha {
+        margin-right: 3rem;
+    }
+    .application {
+        height: 120vw;
+        margin-right: 1rem;
+    }
+    .div-app {
+        padding: 0rem 0.5rem 0rem 1rem;
+    }
+    .kasbokar {
+        margin-right: 1rem;
+        width: 90%;
+        height: 80vw;
+    }
+    .shahr {
+        height: 160vw;
+    }
+    .footer {
+        height: 120vw;
+    }
+}

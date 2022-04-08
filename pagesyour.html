@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.rtl.min.css" 
+    integrity="sha384-+qdLaIRZfNu4cVPK/PxJJEy0B0f3Ugv8i482AKY7gwXwhaCroABd086ybrVKTa0q" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/custom.js"></script>
+    
+
+    <link rel="stylesheet" href="css/pagesyour.css">
+    <link rel="stylesheet" href="css/querypagesyour.css">
+
+    <title>snappfood2</title>
+</head>
+<body>
+
+  <section class="header">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="d-flex justify-content-center align-items-center">
+          <img src="images/snappfood-logo_-min.png" class="img-fluid size-logo">         
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle drop-icon" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+              <i class="bi bi-person icon-profile me-5"></i>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#">
+                <div class="d-flex flex-row">
+                  <i class="bi bi-person icon-profile2 m-0"></i>
+                  <div class="d-flex flex-column">
+                    <h6>حانیه فقیهی</h6>
+                    <a href="#" class="a-shahr">مشاهده حساب کاربری</a>
+                  </div>
+                </div>                  
+              </a></li>
+              <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal3"><i class="bi bi-bag"></i>کیف پول  272 تومن</a></li>
+              <li><a class="dropdown-item" href="#"><i class="bi bi-arrow-right-circle me-3"></i>خروج</a></li>
+            </ul>
+          </div>
+
+          <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                <div class="modal-header mt-5 d-flex flex-column text-right">
+                  <h5 class="modal-title" id="exampleModalLabel">افزایش اعتبار</h5>
+                  <p>موجودی فعلی 272 تومان</p>
+                </div>
+                <div class="modal-body">
+                  <button class="btn btn-secondary ms-5">10 هزار تومان</button>
+                  <button class="btn btn-secondary ms-4">20 هزار تومان</button>
+                  <button class="btn btn-secondary ms-4">50 هزار تومان</button>                                  
+                </div>
+                <div class="modal-footer d-flex flex-column">
+                  <div class="d-flex flex-row">
+                    <p class="bor">-</p>
+                    <div class="bist d-flex flex-column justify-content-center align-items-center">
+                      <p>20000</p>
+                      <p>بیست هزار تومان</p>
+                    </div>                    
+                    <p class="bor">+</p>
+                  </div>
+                  <a href="pagesyour.html" type="button" class="btn btn-sorati">پرداخت</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <button class="navbar-toggler bat-sefaresh" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                سفارش ها                
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">سفارشی ندارید</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <!-- <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#"></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  </ul>
+                </li>
+              </ul> -->
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-sorati" type="submit">Search</button>
+              </form>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">
+                    <img src="images/snappfood-logo_-min.png" alt="logo" class="logo-foot">
+                  </h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <label for="exampleInputPassword1" class="form-label">شماره تلفن همراه</label>
+                  <input type="number" class="form-control" id="exampleInputPassword1">
+                  <label for="exampleInputPassword1" class="form-label">شماره با 09 شروع می شود</label>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">ادامه</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
+          <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">تایید شماره</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p class="text-danger">کد تایید به شماره شما ارسال شد.</p>
+                  <a href="#" class="a-shahr">اصلاح شماره</a>
+                  <input type="number" class="form-control mt-3" id="exampleInputPassword1">
+                  <p for="exampleInputPassword1" class="form-label text-center mt-4">شکیبا باشید</p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">ورود</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row ">
+      
+        <h1 class="font-h-haed ms-5" >سفارش آنلاین
+          <span class="ghaza text-sorati " id="Result" ></span>
+        </h1>
+        <p class="ms-5">سفارش آنلاین غذا، میوه، نان، شیرینی و ...</p>
+        <div class="inputs">
+          <input type="text" class="input-head ms-5" placeholder="ابتدا آدرستان را  انتخاب کنید">
+          <div class="search"><i class="bi bi-search icon-search"></i></div>
+          <i class="bi bi-geo-alt icon-place"></i>
+        </div>
+
+        <img src="images/hero-image.png" class="img-fluid img-pizza">
+      
+    </div>
+
+    <div class="row">
+      <div class="menu-header d-flex">
+        <div class="mt-4 ms-5 ps-2">
+          <img src="images/desktop_1_603508bf202d8_img_st_food.png" class="img-fluid img-h1 ms-2">
+          <p>رستوران</p>
+        </div>
+
+        <div class="mt-4 ms-5 ps-3">
+          <img src="images/desktop_2_603508b330711_img_st_cafe.png" class="img-fluid img-h1">
+          <p>سوپرمارکت</p>
+        </div>
+
+        <div class="mt-4 ms-5 ps-3">
+          <img src="images/desktop_3_603508a95b9be_img_st_sweet.png" class="img-fluid img-h1">
+          <p>کافه</p>
+        </div>
+
+        <div class="mt-4 ms-5 ps-3">
+          <img src="images/desktop_4_603508a14ab73_img_st_supermarket.png" class="img-fluid img-h1">
+          <p>شیرینی‌</p>
+        </div>
+
+        <div class="mt-4 ms-5 ps-3">
+          <img src="images/desktop_5_60350898c61b5_img_st_bakery.png" class="img-fluid img-h1">
+          <p>نانوایی</p>
+        </div>
+
+        <div class="mt-4 ms-5 ps-3">
+          <img src="images/desktop_6_6035088cbcde4_img_st_fruit.png" class="img-fluid img-h1">
+          <p>میوه</p>
+        </div>
+
+        <div class="mt-4 ms-5 ps-3">
+          <img src="images/desktop_11_603507afc9a32_img_st_meat.png" class="img-fluid img-h1">
+          <p>پروتئین</p>
+        </div>
+
+        <div class="mt-4 ms-5 ps-3">
+          <img src="images/desktop_8_6035087b463a3_img_st_icecream.png" class="img-fluid img-h1">
+          <p>آب‌میوه‌‌ بستنی</p>
+        </div>
+
+        <div class="mt-4 ms-5 ps-3">
+          <img src="images/desktop_7_60350883d6e43_img_st_nut.png" class="img-fluid img-h1">
+          <p>آجیل</p>
+        </div>
+
+        <div class="mt-4 ms-5 ps-3">
+          <img src="images/desktop_9_603b811b1d540_img_st_other2.png" class="img-fluid img-h1">
+          <p>سایر</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="main">
+    <div class="container-fluid">
+      <div class="row ghazaha">
+
+        <div class="col-sm-6 col-lg-2">
+          <div>
+            <img src="images/ghaza/website_image_irani_1.jpg" class="img-fluid ax-ghaza ms-2">
+            <p class="font-weight-bold ms-2 p-ghaza"> ایرانی <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+  
+          <div>
+            <img src="images/ghaza/website_image_sokhari_1 (1).jpg" class="img-fluid ax-ghaza ms-2">
+            <p class="p-ghaza c">سوخاری <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+        </div>
+  
+        <div class="col-sm-6 col-lg-2">
+          <div>
+            <img src="images/ghaza/website_image_fastfood_1.jpg" class="img-fluid ax-ghaza">
+            <p class="p-ghaza ms-2">فست فود <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+  
+          <div>
+            <img src="images/ghaza/website_image_italy_1.jpg" class="img-fluid ax-ghaza">
+            <p class="p-ghaza ms-2">پاستا <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+        </div>
+  
+        <div class="col-sm-6 col-lg-2">
+          <div>
+            <img src="images/ghaza/website_image_kebab_1.jpg" class="img-fluid ax-ghaza">
+            <p class="p-ghaza ms-2">کباب <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+  
+          <div>
+            <img src="images/ghaza/website_image_salad_1.jpg" class="img-fluid ax-ghaza">
+            <p class="p-ghaza ms-2">سالاد <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+        </div>
+  
+        <div class="col-sm-6 col-lg-2">
+          <div>
+            <img src="images/ghaza/website_image_pizza_1.jpg" class="img-fluid ax-ghaza">
+            <p class="p-ghaza ms-2">پیتزا <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+  
+          <div>
+            <img src="images/ghaza/website_image_seafood_1.jpg" class="img-fluid ax-ghaza">
+            <p class="p-ghaza ms-2">دریایی <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+        </div>
+  
+        <div class="col-sm-6 col-lg-2">
+          <div>
+            <img src="images/ghaza/website_image_burger_1.jpg" class="img-fluid ax-ghaza">
+            <p class="p-ghaza ms-2">برگر <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+  
+          <div>
+            <img src="images/ghaza/website_image_asian_1.jpg" class="img-fluid ax-ghaza">
+            <p class="p-ghaza ms-2">بین الملل <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+        </div>
+  
+        <div class="col-sm-6 col-lg-2">
+          <div>
+            <img src="images/ghaza/website_image_sandwich_1.jpg" class="img-fluid ax-ghaza">
+            <p class="p-ghaza ms-2">ساندویچ <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+  
+          <div>
+            <img src="images/ghaza/website_image_gilani_1.jpg" class="img-fluid ax-ghaza">
+            <p class="p-ghaza ms-2">گیلانی <i class="bi bi-chevron-compact-left color-i"></i></p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row application">
+        <div class="col-md-7 div-app">
+          <h1 class="mt-5 font-h-haed">اپلیکیشن اسنپ ‌فود</h1>
+          <p class="mt-5 pe-5 p-app text-muted">با اپلیکیشن اسنپ‌فود به راحتی و با چند کلیک ساده می‌توانید رستوران‌ها،
+             کافه‌ها، شیرینی‌فروشی‌ها و سوپرمارکت‌های نزدیک خودتان را
+             جست‌و‌جو کرده و از تجربه سفارش آسان از اسنپ‌فود لذت ببرید.
+          </p>
+          <p class="mt-5">برای دریافت لینک دانلود اپلیکیشن، شماره موبایلتان رو وارد کنید</p>
+          <input type="text" placeholder="*********09" class="input-app">
+          <button class="btn btn-sorati">دریافت لینک</button>
+          <div class="mt-5">
+            <a href="#"><img src="images/cafebazaar.svg"></a>
+            <a href="#"><img src="images/google-play.svg"></a>
+            <a href="#"><img src="images/iapps.svg"></a>
+            <a href="#"><img src="images/sib-app.svg"></a>
+          </div>
+        </div>
+
+        <div class="col-md-5">
+          <img src="images/img_app_mockup@2x.png" alt="application" class="img-fluid app-im">
+        </div>
+      </div>
+
+
+
+      <div class="row">
+        <div class="kasbokar">
+          <div class="col-lg-6">
+            <h1 class="font-h-haed mb-4 ms-5">صاحب کسب و کار هستید؟</h1>
+            <p class="font-lg ms-5">با اسنپ فود کسب و کارتان را آنلاین کنید و فروشتان را افزایش دهید.</p>
+            <button class="btn btn-sorati ms-5 mt-3 font-lg"> <i class="bi bi-shop"></i> ثبت نام فروشندگان</button>
+          </div>
+
+          <div class="col-lg-6">
+            <img src="images/vendor_pic.png" class="img-fluid img-kasbokar">
+          </div>
+        </div>
+      </div>
+
+      <hr>
+
+      <div class="row shahr">
+        <h5 class="ms-5">اسنپ‌فود در شهرهای ایران</h5>
+
+        <div class="col-3 col-lg-1  d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+        <div class="col-3 col-lg-1 d-flex flex-column">
+          <a href="#" class="a-shahr">تهران</a>
+          <a href="#" class="a-shahr">کرمان</a>
+          <a href="#" class="a-shahr">سمنان</a>
+          <a href="#" class="a-shahr">لاهیجان</a>
+          <a href="#" class="a-shahr">بهارستان</a>
+          <a href="#" class="a-shahr">پاکدشت</a>
+          <a href="#" class="a-shahr">کازرون</a>
+          <a href="#" class="a-shahr">خرمشهر</a>
+          <a href="#" class="a-shahr">چهارمحال بختیاری</a>
+          <a href="#" class="a-shahr">ویلاشهر</a>
+          <a href="#" class="a-shahr">لنگرود</a>
+        </div>
+
+      </div>
+    </div>   
+
+
+    <div class="row footer">
+      <div class="col-md-4">
+        <div class="row">
+          <div class="d-flex flex-row">
+            <img src="images/snappfood-logo_-min.png" class="img-fluid logo-foot ms-5 mt-5">
+            <div class="mar-top">
+              <h5 class="text-sorati ms-4">اسنپ‌ فود</h5>
+              <p class="ms-4">تجربه سفارش غذا، از زودفود تا اسنپ‌فود</p>
+            </div>
+          </div>         
+        </div>
+
+        <div class="row">
+          <div class="d-flex">
+            <i class="bi bi-twitter mar-s icon-foot"></i>
+            <i class="bi bi-telegram ms-3 icon-foot"></i>
+            <i class="bi bi-linkedin ms-3 icon-foot"></i>
+            <i class="bi bi-instagram ms-3 icon-foot"></i>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex">
+          <div class="d-flex flex-column margins-foot mt-3">
+            <a href="#" class="a-shahr mt-4">درباره اسنپ‌فود</a>
+            <a href="#" class="a-shahr mt-3">وبلاگ</a>
+            <a href="#" class="a-shahr mt-3">قوانین سایت</a>
+            <a href="#" class="a-shahr mt-3">حریم خصوصی</a>
+            <a href="#" class="a-shahr mt-3">ثبت نام فروشندگان</a>
+          </div>
+
+          <div class="d-flex flex-column margins-foot mt-3">
+            <a href="#" class="a-shahr mt-4">تماس با اسنپ‌فود</a>
+            <a href="#" class="a-shahr mt-3">پرسش‌های متداول</a>
+            <a href="#" class="a-shahr mt-3">ثبت شکایات</a>
+            <a href="#" class="a-shahr mt-3">اپلیکیشن موبایل</a>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="d-flex margin-foot mt-5">
+          <img src="images/enamad.png" alt="enemad">
+          <img src="images/senf.png" alt="senf">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    
+</body>
+</html>
