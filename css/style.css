@@ -7,19 +7,19 @@
 body {
     font-family: sahel;
     overflow-x: hidden;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 }
 
 .header {
     width: 95%;
-    height: 53vw;
+    height: 53vh;
     background-color: #f9fafb;
     border-radius: 0 0 100px 0;
     position: relative;
-    top: 3rem;
+    margin-top: 3rem;
     overflow: hidden;
 }
 
@@ -58,11 +58,8 @@ body {
 }
 
 .img-pizza {
-    width: 70rem;
-    height: 40rem;
-    right: 35vw;
-    position: relative;
-    bottom: 20vw;
+    width: 20rem;
+    height: 25rem;
 }
 
 .font-h-haed {
@@ -98,7 +95,7 @@ body {
     border-radius: 50%;
     background-color: #ff00a6;
     position: absolute;   
-    right: 25.2rem;
+    right: 25rem;
     top: 0.2rem;
 }
 
@@ -141,7 +138,6 @@ body {
 
 .ghazaha {
     width: 100%;
-    margin-right: 25rem;
 }
 
 .ax-ghaza {
@@ -241,7 +237,7 @@ body {
 
 .footer {
     position: relative;
-    height: 20vw;
+    height: 20vh;
     background-color: #f9fafb;
 }
 
@@ -259,7 +255,7 @@ body {
 }
 
 .mar-s {
-    margin-right: 12rem;
+    margin-right: 3rem;
 }
 
 .icon-foot {

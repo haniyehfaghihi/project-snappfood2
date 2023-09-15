@@ -154,7 +154,7 @@
         height: 50vw;
     }
     .footer {
-        height: 30vw;
+        height: 60vh;
     }
 }
 
@@ -270,9 +270,10 @@
     }
     .shahr {
         height: 130vw;
+        margin-right: 0.1rem;
     }
     .footer {
-        height: 90vw;
+        height: 70vh;
     }
     
 }
@@ -295,21 +296,28 @@
     .kasbokar {
         margin-right: 1rem;
     }
+    .footer {
+        height: 100vh;
+    }
+}
+
+@media (max-width:768px) {
+    .mar-s {
+        margin-right: 3rem;
+    }
+    
 }
 
 @media (max-width:600px) {
     .header {
         width: 98%;
-        height: 145vw;
+        height: 120vh;
     }
     .size-logo {
         margin-left: 1rem;
     }
     .menu-header {
         height: 18vw;
-    }
-    .ghazaha {
-        margin-right: 3rem;
     }
     .application {
         height: 120vw;
@@ -327,6 +335,70 @@
         height: 160vw;
     }
     .footer {
-        height: 120vw;
+        height: 120vh;
+    }
+    .margins-foot {
+        margin-right: 3rem;
+    }
+}
+
+@media (max-width:500px) {
+    .input-head {
+        width: 20rem;
+    }
+    .search {
+        right: 20rem;
+    }
+    .font-h-haed {
+        font-size: 35px;      
+    }
+    .shahr {
+        height: 220vw;
+    }
+    .application {
+        height: 140vw;
+        margin-right: 1rem;
+    }
+    .footer {
+        height: 150vw;
+    }
+    
+}
+
+@media (max-width:430px) {
+    .application {
+        height: 180vw;
+    }
+    .kasbokar {
+        margin-right: 0rem;
+        height: 110vw;
+    }
+    .footer {
+        height: 180vw;
+    }
+    
+}
+
+@media (max-width:380px) {
+    .input-head {
+        width: 15rem;
+    }
+    .search {
+        right: 15rem;
+    }
+    .application {
+        height: 250vw;
+    }
+    .input-app {
+        width: 14rem;
+    }
+    .kasbokar {
+        height: 130vw;
+    }
+    .shahr {
+        height: 270vw;
+    }
+    .footer {
+        height: 220vw;
     }
 }

@@ -20,7 +20,8 @@
 </head>
 <body>
 
-  <section class="header">
+  <section class=" d-flex flex-column align-items-center">
+    <div class="header">
     <div class="container-fluid">
       <div class="row">
         <div class="d-flex justify-content-center align-items-center">
@@ -78,17 +79,14 @@
               </div>
             </div>
           </div>
-          
-
-
-
         </div>
       </div>
     </div>
+   
 
-    <div class="row ">
-      
-        <h1 class="font-h-haed ms-5" >سفارش آنلاین
+    <div class="d-flex justify-content-right">
+      <div class="d-flex flex-column">
+        <h1 class="font-h-haed ms-5">سفارش آنلاین
           <span class="ghaza text-sorati " id="Result" ></span>
         </h1>
         <p class="ms-5">سفارش آنلاین غذا، میوه، نان، شیرینی و ...</p>
@@ -97,9 +95,12 @@
           <div class="search"><i class="bi bi-search icon-search"></i></div>
           <i class="bi bi-geo-alt icon-place"></i>
         </div>
-        
-        <img src="images/hero-image.png" class="img-fluid img-pizza">
+      </div>
+      <div class="img-pizza">
+        <img src="images/hero-image.png">
+      </div>  
       
+    </div>
     </div>
 
     <div class="row">
@@ -246,7 +247,7 @@
              جست‌و‌جو کرده و از تجربه سفارش آسان از اسنپ‌فود لذت ببرید.
           </p>
           <p class="mt-5">برای دریافت لینک دانلود اپلیکیشن، شماره موبایلتان رو وارد کنید</p>
-          <input type="text" placeholder="*********09" class="input-app">
+          <input type="text" placeholder="*********09" class="input-app mb-1">
           <button class="btn btn-sorati">دریافت لینک</button>
           <div class="mt-5">
             <a href="#"><img src="images/cafebazaar.svg"></a>
@@ -280,7 +281,7 @@
       <hr>
 
       <div class="row shahr">
-        <h5 class="ms-5">اسنپ‌فود در شهرهای ایران</h5>
+        <h5 >اسنپ‌فود در شهرهای ایران</h5>
 
         <div class="col-3 col-lg-1  d-flex flex-column">
           <a href="#" class="a-shahr">تهران</a>
@@ -454,29 +455,25 @@
     </div>   
 
 
-    <div class="row footer">
-      <div class="col-md-4">
-        <div class="row">
-          <div class="d-flex flex-row">
-            <img src="images/snappfood-logo_-min.png" class="img-fluid logo-foot ms-5 mt-5">
-            <div class="mar-top">
-              <h5 class="text-sorati ms-4">اسنپ‌ فود</h5>
-              <p class="ms-4">تجربه سفارش غذا، از زودفود تا اسنپ‌فود</p>
-            </div>
-          </div>         
-        </div>
-
-        <div class="row">
-          <div class="d-flex">
-            <i class="bi bi-twitter mar-s icon-foot"></i>
-            <i class="bi bi-telegram ms-3 icon-foot"></i>
-            <i class="bi bi-linkedin ms-3 icon-foot"></i>
-            <i class="bi bi-instagram ms-3 icon-foot"></i>
+    <div class="d-flex flex-wrap footer">
+      <div class="col-md-3">
+        <div class="d-flex flex-column">
+          <img src="images/snappfood-logo_-min.png" class="img-fluid logo-foot ms-5 mt-5">
+          <div class="mar-top">
+            <h5 class="text-sorati ms-5">اسنپ‌ فود</h5>
+            <p class="ms-5">تجربه سفارش غذا، از زودفود تا اسنپ‌فود</p>
           </div>
-          
+        </div>         
+
+        <div class="d-flex">
+          <i class="bi bi-twitter mar-s icon-foot"></i>
+          <i class="bi bi-telegram ms-3 icon-foot"></i>
+          <i class="bi bi-linkedin ms-3 icon-foot"></i>
+          <i class="bi bi-instagram ms-3 icon-foot"></i>
         </div>
+                 
       </div>
-      <div class="col-md-4">
+      <div class="col-md-3">
         <div class="d-flex">
           <div class="d-flex flex-column margins-foot mt-3">
             <a href="#" class="a-shahr mt-4">درباره اسنپ‌فود</a>
@@ -496,7 +493,7 @@
         </div>
       </div>
       <div class="col-md-4">
-        <div class="d-flex margin-foot mt-5">
+        <div class="d-flex justify-content-center margin-foot mt-5 display-img">
           <img src="images/enamad.png" alt="enemad">
           <img src="images/senf.png" alt="senf">
         </div>
